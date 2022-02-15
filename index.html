@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="memoir.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="container">
+    <main class="row">
+      <aside class="col-lg-2 col-md-2">
+        <label for="col">nombre de colonne :</label>
+        <input id="col" type="number" value="2" min="2" max="8" />
+        <label for="row">nombre de case : </label>
+        <input id="row" type="number" value="2" min="2" max="8" />
+        <label for="time">Choisir le temps </label>
+        <input id="time" type="number" value="20" min="20" />
+        <input onclick="start()" type="button" value="entré" />
+        <h3 id="victory"></h3>
+        <div>
+          <p id="timer"></p>
+        </div>
+      </aside>
+      <section class=" col-lg-10 col-md-10" id="test">
+        <header>
+          <h1>JEUX DE MEMOIRE</h1>
+        </header>
+        <table id="board"></table>
+        <article>
+          <button onclick="reset()">Reset</button>
+        </article>
+      </section>
+    </main>
+    <script src="memoir.js"></script>
+  </body>
+</html>

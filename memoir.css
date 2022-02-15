@@ -1,0 +1,85 @@
+body {
+    background-color: rosybrown;
+    font-family: cursive;;
+
+}
+
+header {
+    text-align: center;
+}
+
+
+#test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#board tr td {
+    border: solid;
+   border-radius: 10px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: grab;
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+}
+
+#board tr td img {
+    width: 100%;
+}
+
+section article{
+    margin-bottom: 20px;
+}
+
+h3{
+    text-align: center;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    border-radius: 4px;
+    padding: 10px;
+    background: coral;
+}
+
+aside label{
+    margin: 0px;
+}
+
+aside input{
+    border-radius: 5px;
+}
+
+aside > * {
+    margin-bottom: 20px;
+}
+aside div{
+    margin: 0px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+#timer {
+    height: 25px;
+    border: solid 1px;
+    background: white;
+    border-radius: 5px;
+    width: 50px;
+    text-align: center;
+}
+
+
+
+
+/*img_element.src =`./Jim/${number}.gif`;*/
