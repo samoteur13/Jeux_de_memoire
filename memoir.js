@@ -158,10 +158,8 @@ function Timer() {
     if (crono < 15) {
       //timer.innerHTML.style.color = 'red'
       audio_time.play()
-    }
-    if (crono === 0) {
+    }else if (crono === 0) {
       clearInterval(timerInterval);
-      console.log('bonjour')
       nombre_retourner = []
       disabled = true
       victory.innerHTML = "Domage le chrono est terminé vous avez perdue"

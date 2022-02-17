@@ -1,6 +1,5 @@
 body {
     background-color: rosybrown;
-    font-family: cursive, sans-serif;
 
 }
 
@@ -47,6 +46,7 @@ aside{
     border-radius: 4px;
     padding: 10px;
     background: coral;
+    
 }
 
 aside label{
