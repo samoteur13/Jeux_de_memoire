@@ -1,6 +1,5 @@
 body {
     background-color: rosybrown;
-
 }
 
 header {
@@ -16,7 +15,7 @@ header {
 
 #board tr td {
     border: solid;
-   border-radius: 10px;
+    border-radius: 10px;
     text-align: center;
     color: black;
     font-size: 20px;
@@ -31,44 +30,41 @@ header {
     width: 100%;
 }
 
-section article{
+section article {
     margin-bottom: 20px;
 }
 
-h3{
+h3 {
     text-align: center;
 }
 
-aside{
+aside {
     display: flex;
     flex-direction: column;
     border: solid 1px;
     border-radius: 4px;
     padding: 10px;
     background: coral;
-    
 }
 
-aside label{
+aside label {
     margin: 0px;
 }
 
-aside input{
+aside input {
     border-radius: 5px;
 }
 
-aside > * {
+aside>* {
     margin-bottom: 20px;
 }
-aside div{
+
+aside div {
     margin: 0px;
     justify-content: center;
     display: flex;
     align-items: center;
 }
-
-
-
 
 #timer {
     height: 25px;

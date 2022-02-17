@@ -1,5 +1,4 @@
 //liens vers html
-
 let timer = document.querySelector("#timer");
 let victory = document.querySelector('#victory')
 let col = document.querySelector('#col')
@@ -10,6 +9,7 @@ let grille = document.querySelector('#grille button')
 let img = document.querySelector('#grille td')
 let audio = new Audio('pika.mp3');
 let audio_time = new Audio('tictac.mp3')
+let reset1 = document.getElementById('reset1')
 
 //let global
 let nb_Array = []
@@ -27,7 +27,7 @@ let disabled = false;
 
 //demaré la partie
 function start() {
-
+  reset1.removeAttribute("disabled")
   victory.innerHTML = ""
   nb_col = col.value
   nb_row = row.value
@@ -156,9 +156,9 @@ function Timer() {
     crono--
     timer.innerHTML = crono
     if (crono < 15) {
-      //timer.innerHTML.style.color = 'red'
       audio_time.play()
-    }else if (crono === 0) {
+    }
+     if (crono === 0) {
       clearInterval(timerInterval);
       nombre_retourner = []
       disabled = true
