@@ -155,9 +155,9 @@ function Timer() {
   timerInterval = setInterval(() => {
     crono--
     timer.innerHTML = crono
-    if (crono < 15) {
-      audio_time.play()
-    }
+    // if (crono < 15) {
+    //   audio_time.play()
+    // }
      if (crono === 0) {
       clearInterval(timerInterval);
       nombre_retourner = []
